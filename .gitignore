@@ -1,0 +1,37 @@
+# === FICHIERS À NE JAMAIS COMMITER ===
+
+# Disques durs virtuels (trop gros, régénérables)
+*.vdi
+*.vhd
+*.vmdk
+*.ova
+*.ovf
+
+# Snapshots VirtualBox (liés à la machine locale)
+*.vbox-prev
+Snapshots/
+
+# Fichiers de logs temporaires
+*.log
+logs/
+
+# Credentials et secrets (sécurité absolue)
+*.pem
+*.key
+*.pfx
+*.p12
+credentials.json
+secrets.env
+config.php
+
+# Fichiers système Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Environnements virtuels Python (si utilisés plus tard)
+venv/
+.env
+
+# Dossier ISO (à gérer par backup externe, pas par Git)
+00_ISO_Images/
